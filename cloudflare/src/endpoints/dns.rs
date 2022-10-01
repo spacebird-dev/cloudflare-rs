@@ -172,6 +172,7 @@ pub enum DnsContent {
     MX { content: String, priority: u16 },
     TXT { content: String },
     SRV { content: String },
+    CAA { content: String },
 }
 
 #[derive(Deserialize, Debug)]
